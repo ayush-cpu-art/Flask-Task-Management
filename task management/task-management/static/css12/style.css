@@ -1,0 +1,1138 @@
+/* =======================================================
+   GOOGLE FONT
+======================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+/* =======================================================
+   RESET
+======================================================= */
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+    font-family:'Poppins',sans-serif;
+
+}
+
+:root{
+
+    --primary:#2563eb;
+    --primary-dark:#1d4ed8;
+
+    --success:#22c55e;
+    --warning:#f59e0b;
+    --danger:#ef4444;
+
+    --background:#f1f5f9;
+    --card:#ffffff;
+
+    --text:#1e293b;
+    --text-light:#64748b;
+
+    --border:#dbe4ee;
+
+    --shadow:0 10px 30px rgba(15,23,42,.08);
+
+    --radius:18px;
+
+}
+
+
+/* =======================================================
+   BODY
+======================================================= */
+
+body{
+
+    background:var(--background);
+
+    color:var(--text);
+
+    min-height:100vh;
+
+}
+
+
+/* =======================================================
+   TYPOGRAPHY
+======================================================= */
+
+h1{
+
+    font-size:34px;
+
+    font-weight:700;
+
+    color:var(--text);
+
+}
+
+h2{
+
+    font-size:24px;
+
+    color:var(--text);
+
+}
+
+h3{
+
+    color:var(--text-light);
+
+}
+
+.subtitle{
+
+    color:var(--text-light);
+
+    margin-top:8px;
+
+}
+
+
+/* =======================================================
+   INPUTS
+======================================================= */
+
+input,
+select{
+
+    width:100%;
+
+    padding:14px 18px;
+
+    border:2px solid var(--border);
+
+    border-radius:12px;
+
+    font-size:15px;
+
+    outline:none;
+
+    transition:.25s;
+
+}
+
+input:focus,
+select:focus{
+
+    border-color:var(--primary);
+
+    box-shadow:0 0 0 4px rgba(37,99,235,.12);
+
+}
+
+label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    margin-top:18px;
+
+    font-weight:600;
+
+}
+
+
+/* =======================================================
+   BUTTONS
+======================================================= */
+
+button{
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+button:hover{
+
+    transform:translateY(-2px);
+
+}
+
+#submitBtn,
+#loginBtn{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:12px;
+
+    margin-top:24px;
+
+    background:var(--primary);
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:600;
+
+}
+
+#submitBtn:hover,
+#loginBtn:hover{
+
+    background:var(--primary-dark);
+
+}
+
+
+/* =======================================================
+   LOGIN / REGISTER
+======================================================= */
+
+.login-box,
+.register-box,
+.task-box{
+
+    width:900px;
+
+    max-width:95%;
+
+    margin:40px auto;
+
+    background:var(--card);
+
+    border-radius:22px;
+
+    padding:35px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.logo{
+
+    text-align:center;
+
+    font-size:55px;
+
+    margin-bottom:10px;
+
+}
+
+.register-text{
+
+    text-align:center;
+
+    margin-top:25px;
+
+    color:var(--text-light);
+
+}
+
+.register-text a{
+
+    color:var(--primary);
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+.register-text a:hover{
+
+    text-decoration:underline;
+
+}
+
+
+/* =======================================================
+   CARD
+======================================================= */
+
+.card{
+
+    background:var(--card);
+
+    border-radius:18px;
+
+    padding:24px;
+
+    box-shadow:var(--shadow);
+
+}
+
+
+/* =======================================================
+   DASHBOARD
+======================================================= */
+
+.dashboard-container{
+
+    width:1200px;
+
+    max-width:95%;
+
+    margin:40px auto;
+
+}
+
+
+/* =======================================================
+   DASHBOARD HEADER
+======================================================= */
+
+.dashboard-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:35px;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.dashboard-header h1{
+
+    font-size:36px;
+
+    margin-bottom:6px;
+
+}
+
+.dashboard-header p{
+
+    color:var(--text-light);
+
+    font-size:16px;
+
+}
+
+
+/* =======================================================
+   DASHBOARD BUTTONS
+======================================================= */
+
+.dashboard-buttons{
+
+    display:flex;
+
+    gap:15px;
+
+}
+
+.dashboard-buttons button{
+
+    padding:14px 24px;
+
+    border:none;
+
+    border-radius:12px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    color:white;
+
+    background:var(--primary);
+
+}
+
+.dashboard-buttons button:hover{
+
+    background:var(--primary-dark);
+
+}
+
+.logout-btn{
+
+    background:var(--danger)!important;
+
+}
+
+.logout-btn:hover{
+
+    background:#dc2626!important;
+
+}
+
+
+/* =======================================================
+   STATISTICS
+======================================================= */
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+    margin-bottom:35px;
+
+}
+
+.card{
+
+    position:relative;
+
+    overflow:hidden;
+
+    transition:.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:5px;
+
+    background:var(--primary);
+
+}
+
+.card.completed::before{
+
+    background:var(--success);
+
+}
+
+.card.pending::before{
+
+    background:var(--warning);
+
+}
+
+.card h3{
+
+    color:var(--text-light);
+
+    margin-bottom:12px;
+
+    font-size:18px;
+
+}
+
+.card p{
+
+    font-size:42px;
+
+    font-weight:700;
+
+    color:var(--text);
+
+}
+
+
+/* =======================================================
+   CHARTS
+======================================================= */
+
+.chart-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:25px;
+
+}
+
+.chart-card{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:25px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.chart-card h3{
+
+    text-align:center;
+
+    margin-bottom:20px;
+
+    color:var(--text);
+
+    font-size:20px;
+
+}
+
+.chart-card canvas{
+
+    width:100%!important;
+
+    height:250px!important;
+
+}
+
+
+/* =======================================================
+   DASHBOARD ANIMATION
+======================================================= */
+
+.card,
+.chart-card{
+
+    animation:fadeUp .6s ease;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+/* =======================================================
+   TASK MANAGEMENT
+======================================================= */
+
+.task-container{
+
+    width:1200px;
+
+    max-width:95%;
+
+    margin:40px auto;
+
+}
+
+.task-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:30px;
+
+    flex-wrap:wrap;
+
+    gap:20px;
+
+}
+
+.task-header h1{
+
+    font-size:34px;
+
+}
+
+.dashboard-btn{
+
+    background:var(--primary);
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:12px 22px;
+
+    border-radius:12px;
+
+    font-weight:600;
+
+    transition:.25s;
+
+}
+
+.dashboard-btn:hover{
+
+    background:var(--primary-dark);
+
+}
+
+
+/* =======================================================
+   FORM
+======================================================= */
+
+.task-card{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:18px;
+
+    box-shadow:var(--shadow);
+
+    margin-bottom:30px;
+
+}
+
+.form-row{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:20px;
+
+}
+
+.form-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+
+/* =======================================================
+   SEARCH
+======================================================= */
+
+.search-card{
+
+    background:white;
+
+    padding:20px;
+
+    border-radius:18px;
+
+    box-shadow:var(--shadow);
+
+    margin-bottom:30px;
+
+}
+
+.search-card input{
+
+    margin:0;
+
+}
+
+
+/* =======================================================
+   TABLE
+======================================================= */
+
+.table-card{
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:18px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.table-header{
+
+    margin-bottom:20px;
+
+}
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+thead{
+
+    background:#2563eb;
+
+    color:white;
+
+}
+
+thead th{
+
+    padding:18px;
+
+    font-size:15px;
+
+}
+
+tbody td{
+
+    padding:18px;
+
+    border-bottom:1px solid #eef2f7;
+
+}
+
+tbody tr{
+
+    transition:.25s;
+
+}
+
+tbody tr:hover{
+
+    background:#f8fafc;
+
+}
+
+
+/* =======================================================
+   ACTION BUTTONS
+======================================================= */
+
+.edit-btn{
+
+    background:#f59e0b;
+
+    color:white;
+
+    border:none;
+
+    padding:10px 16px;
+
+    border-radius:10px;
+
+    margin-right:8px;
+
+}
+
+.edit-btn:hover{
+
+    background:#d97706;
+
+}
+
+.delete-btn{
+
+    background:#ef4444;
+
+    color:white;
+
+    border:none;
+
+    padding:10px 16px;
+
+    border-radius:10px;
+
+}
+
+.delete-btn:hover{
+
+    background:#dc2626;
+
+}
+
+
+/* =======================================================
+   BADGES
+======================================================= */
+
+.priority{
+
+    display:inline-block;
+
+    padding:6px 14px;
+
+    border-radius:20px;
+
+    color:white;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+.priority.high{
+
+    background:#ef4444;
+
+}
+
+.priority.medium{
+
+    background:#f59e0b;
+
+}
+
+.priority.low{
+
+    background:#22c55e;
+
+}
+
+.status-completed{
+
+    background:#dcfce7;
+
+    color:#166534;
+
+    padding:6px 14px;
+
+    border-radius:20px;
+
+    font-weight:600;
+
+}
+
+.status-pending{
+
+    background:#fef3c7;
+
+    color:#92400e;
+
+    padding:6px 14px;
+
+    border-radius:20px;
+
+    font-weight:600;
+
+}
+
+
+/* =======================================================
+   TOAST
+======================================================= */
+
+#toast{
+
+    position:fixed;
+
+    top:25px;
+
+    right:25px;
+
+    min-width:280px;
+
+    padding:16px 22px;
+
+    color:white;
+
+    border-radius:12px;
+
+    transform:translateX(400px);
+
+    transition:.4s;
+
+    opacity:0;
+
+    z-index:999;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.18);
+
+}
+
+#toast.show{
+
+    transform:translateX(0);
+
+    opacity:1;
+
+}
+
+#toast.success{
+
+    background:#22c55e;
+
+}
+
+#toast.error{
+
+    background:#ef4444;
+
+}
+
+#toast.info{
+
+    background:#2563eb;
+
+}
+
+
+/* =======================================================
+   RESPONSIVE DESIGN
+======================================================= */
+
+@media (max-width: 1024px){
+
+    .dashboard-container,
+    .task-container,
+    .task-box,
+    .login-box,
+    .register-box{
+
+        width:95%;
+
+    }
+
+    .cards{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .chart-container{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .form-row{
+
+        grid-template-columns:1fr 1fr;
+
+    }
+
+}
+
+
+@media (max-width:768px){
+
+    body{
+
+        padding:20px;
+
+    }
+
+    .dashboard-header,
+    .task-header{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+    }
+
+    .dashboard-buttons{
+
+        width:100%;
+
+        flex-direction:column;
+
+    }
+
+    .dashboard-buttons button{
+
+        width:100%;
+
+    }
+
+    .cards{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .form-row{
+
+        grid-template-columns:1fr;
+
+    }
+
+    table{
+
+        display:block;
+
+        overflow-x:auto;
+
+        white-space:nowrap;
+
+    }
+
+    .chart-card canvas{
+
+        height:220px !important;
+
+    }
+
+}
+
+
+@media (max-width:480px){
+
+    h1{
+
+        font-size:28px;
+
+    }
+
+    h2{
+
+        font-size:20px;
+
+    }
+
+    .card p{
+
+        font-size:32px;
+
+    }
+
+    .task-card,
+    .table-card,
+    .search-card,
+    .chart-card{
+
+        padding:18px;
+
+    }
+
+}
+
+
+/* =======================================================
+   SCROLLBAR
+======================================================= */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#f1f5f9;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#94a3b8;
+
+    border-radius:10px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#64748b;
+
+}
+
+
+/* =======================================================
+   SELECTION
+======================================================= */
+
+::selection{
+
+    background:#2563eb;
+
+    color:white;
+
+}
+
+
+/* =======================================================
+   SMOOTH TRANSITIONS
+======================================================= */
+
+button,
+input,
+select,
+.card,
+.chart-card,
+.task-card,
+.table-card,
+.search-card,
+.edit-btn,
+.delete-btn{
+
+    transition:all .25s ease;
+
+}
+
+
+/* =======================================================
+   HOVER EFFECTS
+======================================================= */
+
+.task-card:hover,
+.table-card:hover,
+.search-card:hover,
+.chart-card:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 16px 40px rgba(15,23,42,.10);
+
+}
+
+
+/* =======================================================
+   TABLE ROW ANIMATION
+======================================================= */
+
+tbody tr{
+
+    transition:background .25s ease,
+               transform .2s ease;
+
+}
+
+tbody tr:hover{
+
+    transform:scale(1.01);
+
+}
+
+
+/* =======================================================
+   DASHBOARD CARD NUMBER
+======================================================= */
+
+.card p{
+
+    letter-spacing:1px;
+
+}
+
+
+/* =======================================================
+   END OF FILE
+======================================================= */

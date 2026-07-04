@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Task Management</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css12/style.css') }}">
+
+</head>
+
+<body>
+
+<div class="task-container">
+
+    <!-- ============================= -->
+    <!-- Header -->
+    <!-- ============================= -->
+
+    <div class="task-header">
+
+        <div>
+
+            <h1>📋 Task Management</h1>
+
+            <p class="subtitle">
+                Organize your work efficiently
+            </p>
+
+        </div>
+
+        <a href="/dashboard" class="dashboard-btn">
+            ← Dashboard
+        </a>
+
+    </div>
+
+    <!-- ============================= -->
+    <!-- Task Form -->
+    <!-- ============================= -->
+
+    <div class="task-card">
+
+        <h2>Create / Update Task</h2>
+
+        <div class="form-group">
+
+            <label>Task Title</label>
+
+            <input
+                type="text"
+                id="title"
+                placeholder="Enter task title">
+
+        </div>
+
+        <div class="form-row">
+
+            <div class="form-group">
+
+                <label>Priority</label>
+
+                <select id="priority">
+
+                    <option value="High">
+                        🔴 High
+                    </option>
+
+                    <option
+                        value="Medium"
+                        selected>
+
+                        🟡 Medium
+
+                    </option>
+
+                    <option value="Low">
+
+                        🟢 Low
+
+                    </option>
+
+                </select>
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Due Date</label>
+
+                <input
+                    type="date"
+                    id="due_date">
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Status</label>
+
+                <select id="completed">
+
+                    <option value="false">
+
+                        ⏳ Pending
+
+                    </option>
+
+                    <option value="true">
+
+                        ✅ Completed
+
+                    </option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+        <button
+            type="button"
+            id="submitBtn">
+
+            Add Task
+
+        </button>
+
+    </div>
+
+    <!-- ============================= -->
+    <!-- Search -->
+    <!-- ============================= -->
+
+    <div class="search-card">
+
+        <input
+            type="text"
+            id="search"
+            placeholder="🔍 Search your tasks..."
+            onkeyup="searchTasks()">
+
+    </div>
+
+    <!-- ============================= -->
+    <!-- Task Table -->
+    <!-- ============================= -->
+
+    <div class="table-card">
+
+        <div class="table-header">
+
+            <h2>My Tasks</h2>
+
+        </div>
+
+        <table id="taskTable">
+
+            <thead>
+
+                <tr>
+
+                    <th>ID</th>
+
+                    <th>Task</th>
+
+                    <th>Priority</th>
+
+                    <th>Due Date</th>
+
+                    <th>Status</th>
+
+                    <th>Actions</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+
+<!-- ============================= -->
+<!-- Toast Notification -->
+<!-- ============================= -->
+
+<div id="toast"></div>
+
+<script src="{{ url_for('static', filename='js12/task.js') }}"></script>
+
+</body>
+
+</html>

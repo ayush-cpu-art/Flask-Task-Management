@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css12/style.css') }}">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<div class="dashboard-container">
+
+    <div class="dashboard-header">
+
+        <div>
+
+            <h1>📋 Dashboard</h1>
+
+            <p id="welcomeText">
+                Welcome Back 👋
+            </p>
+
+        </div>
+
+        <div class="dashboard-buttons">
+
+            <button
+                onclick="window.location='/task'">
+
+                📋 Manage Tasks
+
+            </button>
+
+            <button
+                class="logout-btn"
+                onclick="window.location='/logout'">
+
+                🚪 Logout
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Statistics Cards -->
+
+    <div class="cards">
+
+        <div class="card">
+
+            <h3>Total Tasks</h3>
+
+            <p id="totalTasks">0</p>
+
+        </div>
+
+        <div class="card completed">
+
+            <h3>Completed</h3>
+
+            <p id="completedTasks">0</p>
+
+        </div>
+
+        <div class="card pending">
+
+            <h3>Pending</h3>
+
+            <p id="pendingTasks">0</p>
+
+        </div>
+
+    </div>
+
+    <!-- Charts -->
+
+    <div class="chart-container">
+
+        <div class="chart-card">
+
+            <h3>Task Status</h3>
+
+            <canvas id="statusChart"></canvas>
+
+        </div>
+
+        <div class="chart-card">
+
+            <h3>Priority Distribution</h3>
+
+            <canvas id="priorityChart"></canvas>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="{{ url_for('static', filename='js12/dashboard.js') }}"></script>
+
+</body>
+
+</html>
