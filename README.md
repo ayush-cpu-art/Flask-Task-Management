@@ -196,14 +196,3 @@ http://127.0.0.1:5000
 This project is licensed under the GPL-3.0 License.
 
 ---
-
-## 👨‍💻 Author
-
-**Ayush**
-
-GitHub:
-https://github.com/ayush-cpu-art
-
----
-
-⭐ If you found this project helpful, consider giving it a star!
