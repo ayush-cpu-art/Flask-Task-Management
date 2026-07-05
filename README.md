@@ -1,150 +1,84 @@
-# Flask-Task-Management
+# Flask Task Management
 
-# Flask Task Management System
+A full-stack Task Management web application built with **Flask**, **MySQL**, **HTML**, **CSS**, and **JavaScript**. The application allows users to securely register, log in, and manage their daily tasks with complete CRUD (Create, Read, Update, Delete) functionality.
 
-A full-stack Task Management web application built using **Flask**, **MySQL**, **HTML**, **CSS**, and **JavaScript**. Users can register, log in securely, and manage their daily tasks with CRUD operations.
+> **Deployment:** Render  
+> **Database:** Railway MySQL  
+> **Containerization:** Not used in this version (Docker support planned for future releases.)
 
 ---
 
 ## 🚀 Live Demo
 
-https://flask-task-management-jx6a.onrender.com/
-
----
-
-## 📂 GitHub Repository
-
-https://github.com/ayush-cpu-art/Flask-Task-Management
+**Application:**  
+https://flask-task-management-jx6a.onrender.com
 
 ---
 
 ## ✨ Features
 
 - User Registration
-- User Login & Authentication
-- Session Management
-- Add New Tasks
-- Edit Existing Tasks
+- User Login & Logout
+- Session-based Authentication
+- Create Tasks
+- View Tasks
+- Update Task Status
 - Delete Tasks
-- Mark Tasks as Completed
-- Set Task Priority
+- MySQL Database Integration
 - Responsive User Interface
-- Cloud Database (Railway MySQL)
+- Cloud Database (Railway)
 - Hosted on Render
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠 Tech Stack
 
 ### Backend
+
 - Python
 - Flask
 - Flask-CORS
 - PyMySQL
 
 ### Frontend
+
 - HTML5
 - CSS3
 - JavaScript
 
 ### Database
+
 - MySQL (Railway)
 
 ### Deployment
+
 - Render
-- Railway
-- GitHub
 
 ---
 
-## 📁 Project Structure
+## 📂 Project Structure
 
-```
-Flask-Task-Management
+```text
+Flask-Task-Management/
 │
-├── task management
-│   └── task-management
-│       ├── static
-│       │   ├── css12
-│       │   └── js12
-│       ├── templates
+├── screenshots/
+│   ├── login.png
+│   ├── register.png
+│   ├── dashboard.png
+│   └── task-management.png
+│
+├── task management/
+│   └── task-management/
+│       ├── static/
+│       │   ├── css12/
+│       │   └── js12/
+│       ├── templates/
 │       ├── app.py
 │       ├── database.py
 │       └── requirements.txt
 │
-├── README.md
-└── LICENSE
-```
-
----
-
-## ⚙️ Installation
-
-### Clone the repository
-
-```bash
-git clone https://github.com/ayush-cpu-art/Flask-Task-Management.git
-```
-
-### Navigate to the project
-
-```bash
-cd Flask-Task-Management/task\ management/task-management
-```
-
-### Create Virtual Environment
-
-```bash
-python -m venv venv
-```
-
-### Activate Virtual Environment
-
-Windows
-
-```bash
-venv\Scripts\activate
-```
-
-Linux / macOS
-
-```bash
-source venv/bin/activate
-```
-
-### Install Dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
----
-
-## 🗄️ Database Configuration
-
-Create a MySQL database and configure the following environment variables.
-
-```
-DB_HOST=your_host
-DB_PORT=3306
-DB_USER=your_username
-DB_PASSWORD=your_password
-DB_NAME=your_database
-SECRET_KEY=your_secret_key
-```
-
----
-
-## ▶️ Run the Project
-
-```bash
-python app.py
-```
-
-The application will be available at:
-
-```
-http://127.0.0.1:5000
+├── LICENSE
+└── README.md
 ```
 
 ---
@@ -153,52 +87,106 @@ http://127.0.0.1:5000
 
 ### Login Page
 
-<p align="center">
-<img src="screenshots/login.png" width="900">
-</p>
+![Login](./screenshots/login.png)
 
 ---
 
 ### Register Page
 
-<p align="center">
-<img src="screenshots/register.png" width="900">
-</p>
+![Register](./screenshots/register.png)
 
 ---
 
 ### Dashboard
 
-<p align="center">
-<img src="screenshots/dashboard.png" width="900">
-</p>
+![Dashboard](./screenshots/dashboard.png)
 
 ---
 
 ### Task Management
 
-<p align="center">
-<img src="screenshots/task-management.png" width="900">
-</p>
+![Task Management](./screenshots/task-management.png)
+
+---
+
+## ⚙ Installation
+
+### Clone the repository
+
+```bash
+git clone https://github.com/ayush-cpu-art/Flask-Task-Management.git
+```
+
+### Navigate to the project directory
+
+```bash
+cd "task management/task-management"
+```
+
+### Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### Run the application
+
+```bash
+python app.py
+```
+
+The application will start on:
+
+```
+http://127.0.0.1:5000
+```
+
+---
+
+## 🔑 Environment Variables
+
+Configure the following variables before running the application:
+
+```env
+DB_HOST=
+DB_PORT=
+DB_USER=
+DB_PASSWORD=
+DB_NAME=
+SECRET_KEY=
+```
+
+---
 
 ## 📌 Future Improvements
 
-- Docker Support
-- Password Hashing (bcrypt)
-- Email Verification
-- Password Reset
+- Docker Containerization
+- Password Hashing using bcrypt
+- Task Categories
 - Due Dates
-- Categories
+- Task Priorities
 - Search & Filter Tasks
-- Dark Mode
 - REST API
 - JWT Authentication
-- Notifications
+- Email Verification
+- Password Reset
+- User Profiles
+- Dark Mode
 
 ---
 
 ## 📜 License
 
-This project is licensed under the GPL-3.0 License.
+This project is licensed under the **GPL-3.0 License**.
 
 ---
+
+## 👨‍💻 Author
+
+**Ayush Dev**
+
+GitHub: https://github.com/ayush-cpu-art
+
+---
+
+⭐ If you found this project useful, consider giving it a star!
