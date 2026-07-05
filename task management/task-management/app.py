@@ -4,7 +4,13 @@ from werkzeug.security import generate_password_hash, check_password_hash
 from database import get_connection
 
 app = Flask(__name__)
-app.secret_key = "task_management_secret_key"
+
+import os
+
+app.secret_key = os.getenv(
+    "SECRET_KEY",
+    "task_management_secret_key"
+)
 
 CORS(app)
 
