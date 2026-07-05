@@ -153,27 +153,33 @@ http://127.0.0.1:5000
 
 ### Login Page
 
-*(Add screenshot here)*
+<p align="center">
+<img src="screenshots/login.png" width="900">
+</p>
 
 ---
 
 ### Register Page
 
-*(Add screenshot here)*
+<p align="center">
+<img src="screenshots/register.png" width="900">
+</p>
 
 ---
 
 ### Dashboard
 
-*(Add screenshot here)*
+<p align="center">
+<img src="screenshots/dashboard.png" width="900">
+</p>
 
 ---
 
 ### Task Management
 
-*(Add screenshot here)*
-
----
+<p align="center">
+<img src="screenshots/task-management.png" width="900">
+</p>
 
 ## 📌 Future Improvements
 
