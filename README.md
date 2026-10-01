@@ -8,14 +8,14 @@ A full-stack Task Management web application built with **Flask**, **MySQL**, **
 
 ---
 
-## 🚀 Live Demo
+##  Live Demo
 
 **Application:**  
 https://flask-task-management-jx6a.onrender.com
 
 ---
 
-## ✨ Features
+##  Features
 
 - User Registration
 - User Login & Logout
@@ -31,7 +31,7 @@ https://flask-task-management-jx6a.onrender.com
 
 ---
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 ### Backend
 
@@ -56,7 +56,7 @@ https://flask-task-management-jx6a.onrender.com
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```text
 Flask-Task-Management/
@@ -83,7 +83,7 @@ Flask-Task-Management/
 
 ---
 
-## 📸 Screenshots
+##  Screenshots
 
 ### Login Page
 
@@ -109,7 +109,7 @@ Flask-Task-Management/
 
 ---
 
-## ⚙ Installation
+##  Installation
 
 ### Clone the repository
 
@@ -143,7 +143,7 @@ http://127.0.0.1:5000
 
 ---
 
-## 🔑 Environment Variables
+##  Environment Variables
 
 Configure the following variables before running the application:
 
@@ -158,7 +158,7 @@ SECRET_KEY=
 
 ---
 
-## 📌 Future Improvements
+##  Future Improvements
 
 - Docker Containerization
 - Password Hashing using bcrypt
@@ -181,12 +181,5 @@ This project is licensed under the **GPL-3.0 License**.
 
 ---
 
-## 👨‍💻 Author
-
-**Ayush Dev**
-
-GitHub: https://github.com/ayush-cpu-art
-
----
 
 
